@@ -12,7 +12,7 @@ app.post('/chat', async (req, res) => {
     const { chat, model } = req.body;
     try {
     const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=AIzaSyDQ3aZ2FNc_p28qLWflLIpq3QlGkO2Yf_0`,
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=AIzaSyDQ3aZ2FNc_p28qLWflLIpq3QlGkO2Yf_{api_key}`,
         {
         contents: [
             {
