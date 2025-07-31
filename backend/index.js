@@ -22,7 +22,7 @@ app.post('/chat', async (req, res) => {
         },
         {
         headers: {
-            "x-goog-api-key": "AIzaSyDQ3aZ2FNc_p28qLWflLIpq3QlGkO2Yf_0"
+            "x-goog-api-key": Your_api_key"
         }
         }
     );
