@@ -139,6 +139,12 @@ You can modify or expand this list based on available APIs.
 
 ---
 
+## Screenshots:
+
+<img width="1867" height="951" alt="image" src="https://github.com/user-attachments/assets/ff91425a-fbe3-44a4-a52f-51c7b95460c2" />
+<img width="1862" height="929" alt="image" src="https://github.com/user-attachments/assets/e5bcdcfe-ee68-4c8e-87a3-71623a532202" />
+
+
 ## To-Do / Future Improvements
 
 * Add authentication for users
