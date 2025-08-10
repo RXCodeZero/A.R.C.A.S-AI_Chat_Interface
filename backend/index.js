@@ -12,7 +12,7 @@ app.post('/chat', async (req, res) => {
     const { chat, model } = req.body;
     try {
     const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=AIzaSyDQ3aZ2FNc_p28qLWflLIpq3QlGkO2Yf_{api_key}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=<your-api-key>`,
         {
         contents: [
             {
@@ -22,7 +22,7 @@ app.post('/chat', async (req, res) => {
         },
         {
         headers: {
-            "x-goog-api-key": Your_api_key"
+            "x-goog-api-key": "<your-api-key>"
         }
         }
     );
@@ -44,7 +44,7 @@ wss.on("connection", (ws) => {
     try {
         const { chat, model } = JSON.parse(data);
         const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=AIzaSyDQ3aZ2FNc_p28qLWflLIpq3QlGkO2Yf_0`,
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=<your-api-key>`,
         {
             contents: [
             {
@@ -54,7 +54,7 @@ wss.on("connection", (ws) => {
         },
         {
             headers: {
-                "x-goog-api-key": "AIzaSyDQ3aZ2FNc_p28qLWflLIpq3QlGkO2Yf_0"
+                "x-goog-api-key": "<your-api-key>"
             }
         }
         );
